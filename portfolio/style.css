@@ -1,0 +1,100 @@
+.container{
+    scroll-behavior: smooth;
+    background-color: white;
+    font-size: 30px;
+}
+.home-title{
+    display: grid;
+    place-items: center;
+}
+.vipe{
+    color: black;
+    font-weight: bold;
+}
+#vipe{
+    color: purple;
+    font-weight: bold;
+}
+.port{
+    max-width: 150px;
+    height: auto;
+}
+#btn{
+    background-color: purple;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+.home-about{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.abu{
+    display: grid;
+    place-items: center;
+    color: purple;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.skill-name{
+    font-size: 19px;
+    font-weight: bold;
+    color: purple;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 11px;
+    background-color: white;
+    border-radius: 5px;
+}
+.skill-per{
+    height: 11px;
+    background-color:darkblue;
+    border-radius: 5px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    top: -17px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillBars {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+.home-pro{
+    padding: 20px;
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+.fab{
+    font-size: 40px;
+}
+.dropdown-item{
+    text-transform: uppercase;
+}
